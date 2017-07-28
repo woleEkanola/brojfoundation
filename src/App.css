@@ -1,0 +1,447 @@
+
+
+.topnavbar img{
+  animation: App-logo-spin  5s linear;
+  height: 130px;
+  flex-wrap: nowrap;
+ 
+}
+
+.topnavbar{
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  padding: 5px 40px;
+  display: flex;
+   justify-content: space-between;
+   position: fixed;
+   z-index: 3;
+}
+  .navigation {
+    margin: auto 0;
+  }
+
+.navigation li{
+  display: inline-block;
+  margin: 10px;
+   font-family: 'Bree Serif', serif;
+   font-size: 18px;
+   color: #000
+}
+
+.navigation li:hover{
+ color: #90278E
+}
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+@import '~antd/dist/antd.css';
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 600px;
+  line-height: 160px;
+  margin-top: 40px;
+  overflow: hidden;
+  z-index: 2
+}
+
+
+.sldr1{
+  background-image: url(./images/bg1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height: 100%;
+}
+.sldr2{
+  background-image: url(./images/bg2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+   height: 100%;
+}
+.sldr3{
+  background-image: url(./images/bg3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+   height: 100%;
+}
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Pacifico|Work+Sans');
+div.ourFocus{
+  background-color: #000;
+  padding: 40px;
+  color: #DFCDE1;
+  width: 100%;
+  height: 350px;
+  text-align: center;
+
+}
+.ourFocus h1{
+  color: yellow;
+  font-family: 'Pacifico', cursive;
+  font-size: 70px;
+  }
+.ourFocus p{
+  color: #DFCDE1;
+  font-family: 'Bree Serif', serif;
+  font-size: 30px;
+  }
+.ourFocus div{
+  width: 80%;
+  margin: auto;
+}
+
+.parallax{
+  background-image: url(./images/blckbgr.jpg);
+  background-position: center;
+  background-size: 100%;
+   height: 700px;
+   background-attachment: fixed;
+   padding:3% 0;
+}
+  .donate {
+width: 90%;
+height: 200px;
+margin:  auto;
+padding:40px;
+
+background: rgba(252, 216, 15, 0.5);
+text-align: center;
+  }
+
+  .donate h1{
+    color: #fff;
+    margin-bottom: 12px;
+    text-shadow: 2px 2px 2px #000;
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  text-align: center;
+  }
+
+  .donate button {
+  color: #fff;
+  font-family: 'Bree Serif', serif;
+  font-size: 30px;
+  padding: 2px 25px;
+  text-shadow: -2px 2px #90278E;
+
+  background-image: linear-gradient(top, #B837B6, #90278E);
+  box-shadow: inset 0 0 0 1px #90278E;
+  border: none;
+  border-radius: 8px;
+}
+
+.donate button:hover {
+  box-shadow: inset 0 0 0 1px #27496d,0 5px 15px #193047;
+}
+
+
+.donate button:active {
+  box-shadow: inset 0 0 0 1px #27496d,inset 0 5px 30px #193047;
+}
+
+.lstsgmnt {
+width: 100%;
+height: 410px;
+margin:  20px auto;
+padding:40px;
+margin-bottom: 70px;
+background: rgba(144, 39, 142, 0.8);
+text-align: center;
+display: flex;
+  }
+.lstsgmnt div{
+  flex-grow: 1;
+  margin: 0 15px 10px;
+  width: 400px;
+  }
+.lstsgmnt h1{
+  background-color: rgba(265, 265, 265, 0.5);
+  color: #000;
+  font-family: 'Pacifico', cursive;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  
+}
+
+.lstsgmnt h3{
+  color: #FFCC29;
+  font-family: 'Bree Serif', serif;
+  font-size: 16px;
+  text-align: left;
+  margin-top: 5px;
+  
+}
+.lstsgmnt p{
+  color: #DFCDE1;
+  font-family: 'Bree Serif', serif;
+  font-size: 14px;
+  text-align: justify;
+
+}
+.blog{
+  text-align: left;
+}
+.blog p{
+  margin-bottom: 5px;
+}
+.gallery{
+  width: 66%;
+}
+.socialIcons{
+  width: 20px;
+  margin: 0 2px;
+}
+footer{
+  background-color: #90278E;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  display: flex;
+   justify-content: space-between;
+   padding: 5px 40px ;
+}
+
+footer p{
+  color: #E6B1E5;
+   font-family: 'Bree Serif', serif;
+   display: inline-block;
+   margin: 5px;
+}
+.sldr1{
+
+}
+.sldr1 div{
+float: right;
+margin-right: 60px;
+margin-top: 300px;
+}
+.up{
+  font-family: 'Bree Serif', serif;
+  font-size: 65px;
+  line-height: 0px;
+  color: #fff
+  
+}
+.dw{
+    font-family: 'Pacifico', cursive;
+  font-size: 50px;
+   line-height: 80px;
+  
+     color: #FFCC29;
+}
+
+.sldr2 p{
+  font-family: 'Bree Serif', serif;
+  font-size: 35px;
+  line-height: 40px;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+  
+}
+.sldr2 div{
+  
+  width: 70%;
+  margin: auto;
+  margin-top: 300px;
+
+}
+.sldr3 div{
+  float: left;
+  width: 50%;
+  margin-left: 40px;
+  margin-top: 300px;
+
+}
+.sldr3 p{
+  font-family: 'Bree Serif', serif;
+  font-size: 35px;
+  line-height: 40px;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+  text-align: left;
+  
+}
+
+
+
+
+
+@media screen and (max-width: 500px) {
+   
+    .navigation li{
+      display: none;
+    }
+
+    .topnavbar img{
+     margin-left: 80px;
+     height: 90px;
+ }
+    .topnavbar{
+      height: 20px;
+    }
+    .ant-carousel .slick-slide {
+
+  height: 200px;
+  
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+
+.sldr1 div{
+
+margin-right: 10px;
+margin-top: 100px;
+}
+.up{
+
+  font-size: 25px;
+  float: right;
+  
+  
+}
+.dw{
+    font-family: 'Pacifico', cursive;
+  font-size: 20px;
+   line-height: 40px;
+  
+     color: #FFCC29;
+}
+
+.sldr2 p{
+  font-family: 'Bree Serif', serif;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+
+  
+}
+.sldr2 div{
+  padding: 20px;
+  padding-top: 10px;
+  width: 70%;
+  margin: auto;
+  margin-top: 80px;
+  background-color: rgba(0, 0, 0, 0.5)
+
+}
+.sldr3 div{
+  float: left;
+  width: 60%;
+  margin-left: 10px;
+  margin-top: 100px;
+
+}
+.sldr3 p{
+  font-family: 'Bree Serif', serif;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+  text-align: left;
+  
+}
+
+
+
+div.ourFocus{
+
+  padding: 10px;
+  height: 150px;
+
+
+}
+.ourFocus h1{
+  font-size: 20px;
+  }
+.ourFocus p{
+  font-size: 12px;
+  }
+
+.parallax{
+ 
+   height: auto;
+   
+}
+  .donate {
+height: 100px;
+padding:10px;
+  }
+
+  .donate h1{
+
+    margin-bottom: 5px;
+    text-shadow: 0px 0px 0px #000;
+  
+  font-size: 20px;
+
+  }
+
+  .donate button {
+
+  font-size: 20px;
+  padding: 2px 25px;
+}
+
+.lstsgmnt {
+width: 100%;
+height: auto;
+margin:  20px auto;
+padding:10px;
+margin-bottom: 70px;
+
+display: block;
+  }
+.lstsgmnt div{
+
+  margin: 0 0 0;
+  width: 100%;
+  }
+.lstsgmnt h1{
+margin-top: 30px;
+  
+}
+.lstsgmnt p{
+
+  text-align: justify;
+
+}
+.gallery{
+  width: 100%;
+}
+
+.blog p{
+  margin-bottom: 5px;
+    text-align: left;
+}
+.socialIcons{
+  width: 10px;
+  margin: 0 2px;
+}
+
+footer{
+
+  height: 60px;
+   display: block;
+   padding: 5px 20px ;
+}
+
+footer p{
+  
+   display: block;
+   margin: 5px;
+}
+
+footer span{
+  float: right;
+}
+}
