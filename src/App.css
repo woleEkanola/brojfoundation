@@ -1,4 +1,7 @@
-
+p{
+  margin-top: 10px;
+  font-family: 'Bree Serif', serif;
+}
 
 .topnavbar img{
   animation: App-logo-spin  5s linear;
@@ -93,6 +96,9 @@ div.ourFocus{
 .ourFocus div{
   width: 80%;
   margin: auto;
+}
+#id{
+ 
 }
 
 .parallax{
