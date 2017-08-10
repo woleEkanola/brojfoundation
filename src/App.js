@@ -6,6 +6,8 @@ import BeautyPageant from './pages/BeautyPageant';
 import CRHAwards from './pages/CRHAwards';
 import ContactUs from './pages/ContactUs';
 import Blog from './pages/Blog';
+import Gallery from './pages/Gallery';
+
 import PGNotFound from './pages/PGNotFound';
 
 import {
@@ -26,7 +28,8 @@ class App extends Component {
       <Route path="/beauty-pageant" component={BeautyPageant}/>
       <Route path="/cross-river-heritage-awards" component={CRHAwards}/>
       <Route path="/contact" component={ContactUs}/>
-      <Route exact path="/blog" component={Blog}/>
+      <Route path="/gallery" component={Gallery}/>
+      <Route path="/blog" component={Blog}/>
        <Route component={PGNotFound}/>
     </Switch>
   </Router>

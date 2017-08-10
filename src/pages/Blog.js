@@ -4,9 +4,16 @@ import TopNavBar from '../components/TopNavBar';
 import PageTitle from '../components/PageTitle';
 import Footer from '../components/Footer';
 import LatestBlogPost from '../components/LatestBlogPost';
-import Gallery from '../components/Gallery';
-import {Background, ContentWrapper, BigWrapper, SmallWrapper} from '../components/Background';
+import GalleryComponent from '../components/GalleryComponent';
+import {Background, ContentWrapper, BigWrapper, SmallWrapper, TextWrapper} from '../components/Background';
 import Request from 'superagent'
+import styled from 'styled-components';
+
+const H1 = styled.h1`
+color: #fff;
+font-size: 30px
+
+`
 
 export default class Blog extends Component {
   render() {
@@ -23,15 +30,19 @@ Blog
     
 
 <BigWrapper>
+  <TextWrapper>
+    <H1>Our Blog is currently under construction</H1>
+  </TextWrapper>
   </BigWrapper>
   <SmallWrapper> 
-      
+    <GalleryComponent small />  
       <hr />
-      <Gallery />
+  
   </SmallWrapper>
   </ContentWrapper>
+    <Footer />
 </Background>
-     <Footer />
+   
       </div>
      
     );

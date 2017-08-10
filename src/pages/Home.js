@@ -3,7 +3,8 @@ import React, { Component } from 'react';
 
 
 import { Carousel } from 'antd';
-
+import {Background, ContentWrapper, BigWrapper, SmallWrapper} from '../components/Background';
+import GalleryComponent from '../components/GalleryComponent';
 import TopNavBar from '../components/TopNavBar';
 import Footer from '../components/Footer';
 
@@ -28,7 +29,7 @@ export default class Home extends Component {
 </p>
 </div>
        </div>
-        <div className= 'parallax'>
+        <Background >
           <div className= 'donate'>
           <h1>  Let's change lives together... </h1> <button>Donate</button>
            </div>
@@ -57,10 +58,11 @@ export default class Home extends Component {
               </div>
                    <div> 
                      <h1>Photo Gallery</h1>
-                      <img src={require("../images/gallery.png")} className= 'gallery' /></div>
+                      <GalleryComponent small />
+                      </div>
 
            </div>
-            </div>
+            </Background>
            <Footer />
       </div>
      

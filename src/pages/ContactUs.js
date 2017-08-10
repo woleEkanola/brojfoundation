@@ -4,7 +4,7 @@ import TopNavBar from '../components/TopNavBar';
 import PageTitle from '../components/PageTitle';
 import Footer from '../components/Footer';
 import LatestBlogPost from '../components/LatestBlogPost';
-import Gallery from '../components/Gallery';
+import GalleryComponent from '../components/GalleryComponent';
 import {Background, ContentWrapper, BigWrapper, SmallWrapper} from '../components/Background';
 import Request from 'superagent'
 
@@ -23,11 +23,12 @@ Contact Us
     
 
 <BigWrapper>
+ 
   </BigWrapper>
   <SmallWrapper> 
-      
+      <GalleryComponent small />
       <hr />
-      <Gallery />
+ 
   </SmallWrapper>
   </ContentWrapper>
 </Background>

@@ -4,10 +4,9 @@ import TopNavBar from '../components/TopNavBar';
 import PageTitle from '../components/PageTitle';
 import Footer from '../components/Footer';
 import LatestBlogPost from '../components/LatestBlogPost';
-import Gallery from '../components/Gallery';
-import {Background, ContentWrapper, BigWrapper, SmallWrapper} from '../components/Background';
+import {Background, ContentWrapper, BigWrapper, SmallWrapper, TextWrapper} from '../components/Background';
 import Request from 'superagent'
-
+import GalleryComponent from '../components/GalleryComponent';
 export default class CRHAwards extends Component {
   render() {
     return (
@@ -23,11 +22,15 @@ Cross River Heritage Awards
     
 
 <BigWrapper>
+  <TextWrapper>
+    <p>
+The Cross River Heritage Awards is an annual event packaged by the Blessed Royal Jewel Foundation that recognizes and profile men and women, leaders and peace builders creating change at the grassroots to national levels and have become a vehicle for personal development and promotion of the cultural appreciation in Cross River State. 
+  </p></TextWrapper>
   </BigWrapper>
   <SmallWrapper> 
       <LatestBlogPost />
       <hr />
-      <Gallery />
+<GalleryComponent small />
   </SmallWrapper>
   </ContentWrapper>
 </Background>

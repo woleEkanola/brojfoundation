@@ -1,13 +1,32 @@
-p{
-  margin-top: 10px;
+@import "../node_modules/react-image-gallery/styles/css/image-gallery.css";
+h3{
+  margin-top: 20px;
   font-family: 'Bree Serif', serif;
+    color: #fff;
 }
+p{
+  margin-top: 5px;
+  font-family: 'work Sans', serif;
+}
+a {
+  color:inherit;
+  text-decoration: none;
+ }
 
-.topnavbar img{
+ li > a {
+   font-family: 'Bree Serif', serif;
+   font-size: 14px;
+ }
+
+.logo {
   animation: App-logo-spin  5s linear;
   height: 130px;
   flex-wrap: nowrap;
  
+}
+.mhcr{
+  width: 100%;
+  padding: 10px;
 }
 
 .topnavbar{
@@ -24,17 +43,100 @@ p{
     margin: auto 0;
   }
 
-.navigation li{
-  display: inline-block;
-  margin: 10px;
-   font-family: 'Bree Serif', serif;
-   font-size: 18px;
-   color: #000
+.menu,
+.menu ul,
+.menu li,
+.menu a {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+ 
+.menu {
+    height: 40px;
+    width: 505px;
+ 
+}
+ 
+.menu li {
+    position: relative;
+    list-style: none;
+    float: left;
+    display: block;
+    height: 40px;
+}
+  .menu li a {
+    display: block;
+    padding: 0 14px;
+    margin: 6px 0;
+    line-height: 28px;
+    text-decoration: none;
+ 
+    
 }
 
-.navigation li:hover{
+.menu li:hover{
  color: #90278E
 }
+
+
+.menu ul {
+    position: absolute;
+    top: 40px;
+    left: 0;
+ 
+    opacity: 0;
+    background: #FFF;
+ 
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+ 
+    -webkit-transition: opacity .25s ease .1s;
+    -moz-transition: opacity .25s ease .1s;
+    -o-transition: opacity .25s ease .1s;
+    -ms-transition: opacity .25s ease .1s;
+    transition: opacity .25s ease .1s;
+}
+ 
+.menu li:hover > ul { 
+  opacity: 1;
+  
+}
+ 
+.menu ul li {
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+ 
+    -webkit-transition: height .25s ease .1s;
+    -moz-transition: height .25s ease .1s;
+    -o-transition: height .25s ease .1s;
+    -ms-transition: height .25s ease .1s;
+    transition: height .25s ease .1s;
+}
+ 
+.menu li:hover > ul li {
+
+    height: 36px;
+    overflow: visible;
+    padding: 0;
+}
+.menu ul li a {
+    width: 160px;
+    padding: 4px 0 4px 40px;
+    margin: 0;
+ 
+    border: none;
+    border-bottom: 1px solid #353539;
+}
+ 
+.menu ul li:last-child a { border: none; }
+
+
+
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
@@ -152,7 +254,7 @@ text-align: center;
 
 .lstsgmnt {
 width: 100%;
-height: 410px;
+height: auto;
 margin:  20px auto;
 padding:40px;
 margin-bottom: 70px;
@@ -277,13 +379,44 @@ margin-top: 300px;
   
 }
 
+#mobileMenu{
+  display: none;
+}
 
-
-
+.prvIMG{
+  width: auto;
+  height: 100%;
+}
 
 @media screen and (max-width: 500px) {
+.prvIMG{
+  width: 100%;
+  height: auto;
+  margin-top: 150px
+}
+
+  .mobileMenu{
+    position: fixed;
+    top: 25%;
+    right: 0;
+    width: 80%;
+    height: 60%;
+    background-color: rgba(0, 0, 0, 0.8)
+  }
+  .mobileMenu li{
+    color: #fff;
+    padding: 20px;
+    padding-left: 20px;
+    background-color: rgba(144, 39, 142, 0.8);
+    margin: 2px 0;
+        
+  }
+
+  .mobileMenu li:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+  }
    
-    .navigation li{
+    .menu li{
       display: none;
     }
 
@@ -291,6 +424,19 @@ margin-top: 300px;
      margin-left: 80px;
      height: 90px;
  }
+    #mobileMenu{
+      display: block;
+      height: 50px;
+      width: auto;
+      position: fixed;
+      top: 0;
+      right: 0;
+      margin-top: 90px;
+      margin-right: 20px;
+      opacity: 0.4;
+      z-index: 100;
+
+    }
     .topnavbar{
       height: 20px;
     }
